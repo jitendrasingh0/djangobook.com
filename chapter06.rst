@@ -67,6 +67,9 @@ First, make a few changes to your settings file:
    Django admin site requires these four packages. (If you're following
    along with our ongoing ``mysite`` project, note that we commented out
    these four ``INSTALLED_APPS`` entries in Chapter 5. Uncomment them now.)
+   If you want to load the required static files for better representation then add ``'django.contrib.staticfiles'`` in your ``INSTALLED_APPS``.
+   
+   
 
 3. Make sure ``MIDDLEWARE_CLASSES`` contains
    ``'django.middleware.common.CommonMiddleware'``,
