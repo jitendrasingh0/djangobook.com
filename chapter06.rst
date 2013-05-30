@@ -69,8 +69,6 @@ First, make a few changes to your settings file:
    these four ``INSTALLED_APPS`` entries in Chapter 5. Uncomment them now.)
    If you want to load the required static files for better representation then add ``'django.contrib.staticfiles'`` in your ``INSTALLED_APPS``.
    
-   
-
 3. Make sure ``MIDDLEWARE_CLASSES`` contains
    ``'django.middleware.common.CommonMiddleware'``,
    ``'django.contrib.messages.middleware.MessageMiddleware'``,
