@@ -64,7 +64,7 @@ First, make a few changes to your settings file:
 2. Make sure ``INSTALLED_APPS`` contains ``'django.contrib.auth'``,
    ``'django.contrib.contenttypes'``, ``'django.contrib.messages'`` 
    and ``'django.contrib.sessions'``. The
-   Django admin site requires these three packages. (If you're following
+   Django admin site requires these four packages. (If you're following
    along with our ongoing ``mysite`` project, note that we commented out
    these four ``INSTALLED_APPS`` entries in Chapter 5. Uncomment them now.)
 
