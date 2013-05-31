@@ -218,7 +218,8 @@ that with a second view function::
     )
 
     # views.py
-
+    from django.http import HttpResponse
+    
     def search(request):
         if 'q' in request.GET:
             message = 'You searched for: %r' % request.GET['q']
