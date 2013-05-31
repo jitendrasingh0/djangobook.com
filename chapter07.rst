@@ -222,9 +222,14 @@ that with a second view function::
     
     def search(request):
         if 'q' in request.GET:
-            message = 'You searched for: %r' % request.GET['q']
+            q = request.GET['q']
+            if q:
+                message = 'You searched for: %r' % request.GET['q']
+            else:
+                message = 'You submitted an empty form.'
         else:
-            message = 'You submitted an empty form.'
+            message = 'Please submit a search form.'
+            
         return HttpResponse(message)
 
 .. SL Tested ok
